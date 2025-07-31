@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emergency Call</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script src="/js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Emergency Help</h1>
+    <nav>
+      <a href="/index">Home</a>
+      <a href="/gps">GPS Tracker</a>
+      <a href="/report">Report</a>
+      <a href="/helplines">Helplines</a>
+    </nav>
+  </header>
+
+  <main class="info-section">
+    <h2>If you're in immediate danger, call the police now.</h2>
+    <button onclick="makeEmergencyCall()">Call Police (100)</button>
+    <p>This will initiate a direct call to the emergency police number.</p>
+  </main>
+
+  <script>
+    function makeEmergencyCall() {
+      window.location.href = 'tel:100';
+    }
+  </script>
+</body>
+</html>
